@@ -41,16 +41,16 @@ static const Rule rules[] = {
    *	WM_CLASS(STRING) = instance, class
    *	WM_NAME(STRING) = title
    */
-      /* class        instance    title       tags mask     isfloating   monitor */
-      { "Gimp",         NULL,       NULL,       0,            1,           -1 },
-      { "Firefox",      NULL,       NULL,       1 << 1,       0,           -1 },
-      { "chromium",     NULL,       NULL,       1 << 1,       1,           -1 },
-      { "Steam",        NULL,       NULL,       1 << 3,       1,           -1 },
-      { "Atom",         NULL,       NULL,       1 << 0,       0,           -1 },
-      { "Thunderbird",  NULL,       NULL,       1 << 1,       1,           -1 },
-      { "Gedit",        NULL,       NULL,       0,            1,           -1 },
-      { "Vlc",          NULL,       NULL,       0,            1,           -1 },
-			{ "Nautilus",     NULL,       NULL,       0,            1,           -1 }
+	/* class        instance    title       tags mask     isfloating   monitor */
+	{ "Gimp",         NULL,       NULL,       0,            1,           -1 },
+	{ "Firefox",      NULL,       NULL,       1 << 1,       0,           -1 },
+	{ "chromium",     NULL,       NULL,       1 << 1,       1,           -1 },
+	{ "Steam",        NULL,       NULL,       1 << 3,       1,           -1 },
+	{ "Atom",         NULL,       NULL,       1 << 0,       0,           -1 },
+	{ "Thunderbird",  NULL,       NULL,       1 << 1,       1,           -1 },
+	{ "Gedit",        NULL,       NULL,       0,            1,           -1 },
+	{ "Vlc",          NULL,       NULL,       0,            1,           -1 },
+	{ "Nautilus",     NULL,       NULL,       0,            1,           -1 }
 };
 
 /* layout(s) */
@@ -65,11 +65,11 @@ static const Layout layouts[] = {
   { "[@]",      spiral },
   { "[\\]",     dwindle },
   { "###",      gaplessgrid },
-	{ "c",				centeredmaster},
+  { "c",	centeredmaster},
 };
 
 /* key definitions */
-#define MODKEY Mod1Mask
+#define MODKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
