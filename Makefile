@@ -55,6 +55,8 @@ install: all
 uninstall:
 	@echo removing executable file from ${DESTDIR}${PREFIX}/bin
 	@rm -f ${DESTDIR}${PREFIX}/bin/dwm
+	@echo removing executable link file from ${DESTDIR}${PREFIX}
+	@rm -f ${DESTDIR}${PREFIX}/dwm
 	@echo removing manual page from ${DESTDIR}${MANPREFIX}/man1
 	@rm -f ${DESTDIR}${MANPREFIX}/man1/dwm.1
 
